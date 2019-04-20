@@ -1,0 +1,28 @@
+
+spring:
+#  mvc:
+##  静态资源访问路径
+#    static-path-pattern: /**
+##    静态资源的本地路径, 注意前缀
+#  resources:
+#    static-locations: classpath:/static/,file:D:/mingliyuan/img/
+#  mail:
+#  邮箱服务器地址
+#    host: smtp.qq.com
+#    username: username@email
+#    password: *****
+#    default-encoding: UTF-8
+
+  thymeleaf:
+    encoding: UTF-8
+    mode: html5
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    servlet:
+      content-type: text/html
+
+# 自定义发送邮件方
+#mail:
+#  from:
+#    addr: username@email
