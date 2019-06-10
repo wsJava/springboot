@@ -38,21 +38,5 @@ public class RedisConfig extends CachingConfigurerSupport {
             return sb.toString();
         };
     }
-//
-//    @Bean
-//    @Override
-//    public CacheManager cacheManager() {
-//        RedisCacheManager rcm = new RedisCacheManager(redisTemplate());
-//        return rcm;
-//    }
-//
-//    @Bean
-//    public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factory){
-//        StringRedisTemplate template = new StringRedisTemplate(factory);
-//        Jackson2JsonRedisSerializer serializer = new Jackson2JsonRedisSerializer(Object.class);
-//        ObjectMapper om = new ObjectMapper();
-//        om.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
-//
-//    }
 
 }
